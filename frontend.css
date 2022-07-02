@@ -56,6 +56,9 @@
   body {
       font-family: 'Star Jedi', arial;
       background-color: #000000;
+      text-align: center;
+      margin-right: 10px;
+      margin-left: 10px;
       } 
   
   .container{
@@ -105,6 +108,10 @@
       }
   .header_historias{
     margin-right: 80px;
+      }
+  .header_home{
+    margin:80px;
+
   }
   .container2_parrafo1 {
     text-align: center;
@@ -133,6 +140,40 @@
         
   }
 
+  //columas
+
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 32px;
+  }
+  
+  .grid--2-cols {
+    -ms-grid-columns: 1fr 80px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+  }
+  
+  .grid--3-cols {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4-cols {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid--5-cols {
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .grid--6-cols {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+  }
+
 
   
 
@@ -141,14 +182,13 @@
   footer{
     background-color: #FFE81F;
     margin:10px;
-    
     width: 100%;
-    font-size: 60px;
-
+    height: 20%;
+    font-size: 30px;
+    align-items: center;
 
   }
-
-  
-  
-
-  
+.footer_imagen{
+  max-width: 50px;
+  max-height: 50px;
+}

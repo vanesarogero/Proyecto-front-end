@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="frontend.css">
-    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
-    //no olvidar meter el nombre y el icono de arriba
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acerca de Star Wars</title>
+        <link rel="icon" type="image/svg+xml" href="imagenes/logoimperio.png" sizes="any">
+        <link rel="stylesheet" href="frontend.css">
+        <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
+            
+    </head>
 <body>
-    <header>
-        <a name="acercade"></a>
-        <div>
-            <img> //icono de star wars
-            <h2>Acerca de Starwars</h2>
-        </div name="acercade">
-        <div> //menu
-            <a>//Home</a>
-            <a>//Buscador de personajes</a>
-        </div>
+    <header class="header">
+            
+            <div class="container">
+                
+                <img src="imagenes/StarWarsfuego.jpg" class="container_imagen">
+            </div>
+    
+            <div class="header_container_menu">
+                
+                <a href="busqueda.html" name="acercade" class="header_acercade">Busca tus personajes</a>
+                <a href="home.html" name="busqueda"class="header_busqueda">Inicio</a>
+                <a href="Películasdedisney.html" name="historias"class="header_historias">Otras historias de Starwars</a>
+            </div>
     </header>
 
-    <div> //
-        <img src="imagenes/Acerca de/01.jpg">
-        <a href="https://www.filmaffinity.com/es/film267008.html">Leer más en Filmaffinity</a>
-        <h2>Episodio I: La amenaza fantasma</h2>
-        <p>El pequeño planeta Naboo, vive una situación de bloqueo por parte de la Federación de Comercio, que reivindica el control de todas las rutas comerciales. Para solucionar el problema el canciller de la República, Valorum, envía para negociar a dos caballeros Jedi, el Maestro Jedi, Qui-Gon Jinn y su aprendiz, Obi-Wan Kenobi, lo cual acelera los planes de Darth Sidious que decide adelantar su ataque contra Naboo.
+    <div class="episodio1">
+        <div class="episodio1_columna1"> //
+            <img src="imagenes/Acerca de/01.jpg">
+            <a href="https://www.filmaffinity.com/es/film267008.html">Leer más en Filmaffinity</a>
+        </div>
+        <div class="peliculas_episodio1_columna2">
+            <h2>Episodio I: La amenaza fantasma</h2>
+            <p>El pequeño planeta Naboo, vive una situación de bloqueo por parte de la Federación de Comercio, que reivindica el control de todas las rutas comerciales. Para solucionar el problema el canciller de la República, Valorum, envía para negociar a dos caballeros Jedi, el Maestro Jedi, Qui-Gon Jinn y su aprendiz, Obi-Wan Kenobi, lo cual acelera los planes de Darth Sidious que decide adelantar su ataque contra Naboo.
             Los caballeros Jedi consiguen huir y llegan a Naboo, donde, con la ayuda de Jar Jar Binks, un gunga expulsado de Otoh Gunga, la ciudad sumergida donde habitaba, llegan hasta Theed, la capital, a tiempo para salvar a la reina Amidala y huir con ella con destino a Coruscant.
             En el camino se detienen en el desierto-planeta Tatooine, para reparar un motor. Allí Qui-Gon descubre a un niño, Anakin, esclavo de Watto, con el que Padmé, doncella de la reina traba amistad. Annakin, pese a su minoría de edad tiene una gran intuición y fuerza mental, que le lleva a ganar incluso la carrera de vainas contra el poderoso Sebulba, lo que le valdrá conseguir gratuitamente la pieza de la nave y ser liberado. Qui-Gon intuye que Anakin es el individuo destinado para traer equilibrio a la Fuerza, y decide entrenarlo como Caballero Jedi. 
             Una vez en Coruscant la reina Amidala pide ayuda al senado de la República, pero su gobierno, sometido a los burócratas ha sido debilitado, por lo que se pospone la ayuda a la espera de un estudio de la situación, lo que lleva a la reina Amidala a efectuar una moción de censura contra el presidente aconsejada por el senador Palpatine, que aprovecha la situación para consolidar su poder.
@@ -34,11 +41,16 @@
             Este, escondido junto a R2-D2 en un caza estelar lo pone accidentalmente en marcha y se dirige hacia la nave de guerra enemiga que, con su escudo deflector rechazaba a todas las naves de Naboo. Pero el caza de Annakin, tocado y fuera de control entra casi por accidente en el hangar de la nave.
             Entretanto la reina es capturada en su palacio. Aunque la capturada es la verdadera Padmé y Amidala consigue recuperar su trono y con las armas en él escondidas reducir a los droides, mientras en el hangar de la nave de control de la Federación de Comercio Annakin dispara y provoca explosiones en cadena que acabarán con ella mientras él y R2-D2 consiguen escapar, quedando los droides que habían lanzado su ataque contra Naboo paralizados y el planeta libre.
             </p>
-
-        <img src="imagenes/Acerca de/02.jpg">
-        <a href="https://www.filmaffinity.com/es/film385996.html">Leer más en Filmaffinity</a>
-        <h2>Episodio II: El ataque de los Clones</h2>
-        <p>Obi-Wan Kenobi es ya un caballero Jedi formado del todo, y en el apogeo de su poder, y Anakin es un joven Padawan de 19 años, impetuoso y con serios problemas a la hora de aceptar las estrictas reglas que conlleva ser un Jedi.
+        </div>
+    </div>
+    
+        <div class="peliculas_episodio2_columna1">
+            <img src="imagenes/Acerca de/02.jpg">
+            <a href="https://www.filmaffinity.com/es/film385996.html">Leer más en Filmaffinity</a>
+        </div>
+        <div class="peliculas_episodio2_columna2">
+            <h2>Episodio II: El ataque de los Clones</h2>
+            <p>Obi-Wan Kenobi es ya un caballero Jedi formado del todo, y en el apogeo de su poder, y Anakin es un joven Padawan de 19 años, impetuoso y con serios problemas a la hora de aceptar las estrictas reglas que conlleva ser un Jedi.
             La República continúa inmersa en las luchas internas. Un movimiento separatista que engloba a cientos de planetas y una corporación muy fuerte amenaza a la galaxia de tal forma que ni los Jedis pueden controlar. Y para controlar esta amenaza, el Consejo Supremo autoriza la creación de un Gran Ejército de la República que debe ayudar a los Jedis.
             Tras un intento de asesinato contra la senadora Amidala, quien abdicó de su puesto como Reina para dedicarse únicamente a la República, el Maestro Yoda decide enviar a los dos Jedis a investigar el asunto, ya que se sospecha que puede traer consecuencias desastrosas.
             Para ello los caminos de Anakin y Obi-Wan se separan, ya que el primero es enviado a proteger a la senadora, mientras que el segundo tendrá que investigar todo lo referente al intento de asesinato, lo que le lleva a un planeta llamado Kamino, un tormentoso mundo oceánico donde hay un sofisticado laboratorio genético donde se cultivan clones de Jango Fett, un temible guerrero.
@@ -46,11 +58,16 @@
             Durante el tiempo que Amidala y Anakin están juntos, el amor comienza a surgir entre ambos, pese a que los dos saben que está totalmente prohibido para un Jedi tener esposa o amante. Aún así, deciden llevar su relación adelante y en secreto, desafiando los designios del Consejo Jedi, primero en Naboo y después en Tatooine, donde descubre que su madre, casada con otro hombre, con el que tuvo otro hijo, fue secuestrada por los moradores del desierto. Llega hasta ella, pero no puede evitar su muerte, tras lo cual se venga acabando con la tribu responsable sin perdonar siquiera a los niños.
             Finalmente son atraídos, al igual que Obi-Wan a un remoto planeta rojo llamado Geonosis en el que se concentran los ejércitos separatistas. Allí, y tras negarse a formar parte del grupo de Dooku, son sometidos a un espectáculo en que deben ser destrozados por fieras temibles, pese a lo cual logran sobrevivir, no muriendo en el enfrentamiento posterior gracias a la llegada del maestro Yoda al mando del ejército de clones, que logra equilibrar las fuerzas, debiendo enfrentarse él al malvado Dooku.
             Salvan la unidad, pero no logran vencer a sus enemigos que se preparan para futuras batallas.</p>
+        </div>
 
-        <img src="imagenes/Acerca de/03.jpg">
-        <a href="https://www.filmaffinity.com/es/film504743.html">Leer más en Filmaffinity</a>
-        <h2>Episodio III: La venganza de los Sith</h2>
-        <p>Las últimas y devastadoras batallas de las Guerras de los Clones se libran en toda la Galaxia bajo el mando del lord Sith, Conde Dooku, que ha secuestrado el Canciller Supremo Palpatine, retenido por el líder del ejército de los androides General Grievous al que se enfrentarán Obi-Wan Kenobi y Anakin Skywalker, logrando rescatarlo y acabar, por orden del propio Palpantine, con el conde Dooku. Pero no con Grievous, que consigue huir.
+        <div class="peliculas_episodio3_columna1">
+            <div>
+                <img src="imagenes/Acerca de/03.jpg">
+                <a href="https://www.filmaffinity.com/es/film504743.html">Leer más en Filmaffinity</a>
+            </div>
+            <div class="peliculas_episodio3_columna2">
+                <h2>Episodio III: La venganza de los Sith</h2>
+                <p>Las últimas y devastadoras batallas de las Guerras de los Clones se libran en toda la Galaxia bajo el mando del lord Sith, Conde Dooku, que ha secuestrado el Canciller Supremo Palpatine, retenido por el líder del ejército de los androides General Grievous al que se enfrentarán Obi-Wan Kenobi y Anakin Skywalker, logrando rescatarlo y acabar, por orden del propio Palpantine, con el conde Dooku. Pero no con Grievous, que consigue huir.
             En Curuscan son recibidos como héroes. Allí Annakin puede ver de nuevo a su amada Padmé, que le confiesa que está embarazada. Su alegría sólo se verá nublada por los sueños en que Annakin ve cómo Padmé fallece tras dar a luz.
             Palpantine pide a Annakin que le represente en el Consejo Jedi. Es aceptado, pero sin otorgarle el rango de maestro, lo que considera un insulto, pese a lo cual acepta el encargo de espiar al Senador, mientras su lealtad hacia los Jedi se tambalea pese a ser, según la profecía el Elegido para asegurar la paz en toda la galaxia y traer el equilibrio a la Fuerza.
             Palpantine le revela que Grievous se esconde en Utapau. Pero el Consejo designa a Obi- Wan para derrotarlo mientras los demás líderes rebeldes huyen al planeta volcánico de Mustafar.
@@ -64,11 +81,17 @@
             Obi-Wan derrota y hiere mortalmente a Annakin, que arde bajo el fuego. El emperador lo rescata aun con vida, y lo convierte en lord Vader, debiendo vivir bajo su máscara el resto de sus días.
             Obi-Wan parte con una Amidala agonizante que fallecerá tras dar luz a los gemelos a los que llamará Luk y Leia. El primero será enviado a Tatoine, con sus familiares vigilado por Obi-Wan en el exilio mientras que Leia será adoptada por el Senador Organa.
             </p>
+            </div>
+        </div>
 
-        <img src="imagenes/Acerca de/04.jpg">
-        <a href="https://www.filmaffinity.com/es/film712041.html">Leer más en Filmaffinity</a>
-        <h2>Episodio IV: Una nueva esperanza</h2>
-        <p>Poco antes de que su nave sea capturada por las naves imperiales, la princesa Leia Organa, miembro del Senado Galáctico, y que forma parte de la Alianza Rebelde introduce en la memoria de R2D2, un robot, los planos de la Estrella de la Muerte, potentísima arma del imperio capaz por sí sóla de destruir un planeta, lo que hará que los demás se rindan a su poder.
+    <div>
+        <div class="peliculas_episodio4_columna1">
+            <img src="imagenes/Acerca de/04.jpg">
+            <a href="https://www.filmaffinity.com/es/film712041.html">Leer más en Filmaffinity</a>
+        </div>
+        <div class="peliculas_episodio4_columna2">
+            <h2>Episodio IV: Una nueva esperanza</h2>
+            <p>Poco antes de que su nave sea capturada por las naves imperiales, la princesa Leia Organa, miembro del Senado Galáctico, y que forma parte de la Alianza Rebelde introduce en la memoria de R2D2, un robot, los planos de la Estrella de la Muerte, potentísima arma del imperio capaz por sí sóla de destruir un planeta, lo que hará que los demás se rindan a su poder.
             R2D2 y C3PO, un androide, son enviados en una nave auxiliar lejos de los asaltantes, hasta llegar al planeta Tattoine, donde son capturados por los Jawas, que trafican con ellos.
             Mientras tanto Darth Vader ha capturado a la princesa, y, al darse cuenta de que la información que buscan ya no está en la nave, envía a sus tropas tras los dos robots.
             Y precisamente en Tattoine vive, junto con sus tíos, el joven Luke Skywalker, joven inquieto deseoso de abandonar la tranquila vida junto a su tío, junto con el cual acude al mercado de los Jawas donde adquiere los dos robots.
@@ -84,11 +107,18 @@
             Con los planos de la Estrella de la Muerte en su poder se prepara una pequeña flota dispuesta a destruirla. El ataque es feroz y pierden muchas de sus unidades, pero finalmente Luke consigue destruir la Estrella de la Muerte.
             Han y Luke serán tras ello recibidos como héroes por los grupos rebeldes y condecorados por Leia, por la que ambos se sienten atraídos.
             </p>
+        </div>
+    </div>
 
-        <img src="imagenes/Acerca de/05.jpg">
-        <a href="https://www.filmaffinity.com/es/film605090.html">Leer más en Filmaffinity</a>
-        <h2>Episodio V: Imperio contraataca</h2>
-        <p>Tras la destrucción de la Estrella de la Muerte, Darth Vader ataca a los rebeldes escondidos en Yavin. Los supervivientes deberán huir, refugiándose la princesa Leia y los suyos en el planeta helado de de Hoth.
+    <div>
+        <div>
+
+            <img src="imagenes/Acerca de/05.jpg">
+            <a href="https://www.filmaffinity.com/es/film605090.html">Leer más en Filmaffinity</a>
+        </div>
+        <div>
+            <h2>Episodio V: Imperio contraataca</h2>
+            <p>Tras la destrucción de la Estrella de la Muerte, Darth Vader ataca a los rebeldes escondidos en Yavin. Los supervivientes deberán huir, refugiándose la princesa Leia y los suyos en el planeta helado de de Hoth.
             Pero Darth Vader no se rinde y envía androides de reconocimiento por toda la galaxia hasta que da con ellos.
             Luke es atacado por un hombre de la nieve, y Han, ya dispuesto para marcharse debe posponer sus planes para salir a buscarlo, pues sabe que si la noche le llega entre el hielo morirá. Conseguirá finalmente encontrarlo y salvar su vida sacrificando al animal que le sirve de cabalgadura y construyendo un refugio.
             El androide enemigo es destruido, pero transmitió ya la posición de los rebeldes a Darth Vader que se dirige a Hoth donde se entabla una terrible batalla mintras tratan de evacuar a sus hombres. La pericia de Luke le sirve para destruir algunas de las temibles armas, pero finalmente deberán huir.
@@ -99,13 +129,19 @@
             Luke siente desde Dagobah que sus amigos se encuentran en peligro y decide acudir a su rescate pese a no haber completado su aprendizaje, cayendo así en la trampa preparada por Darth Vader. Y Luke se enfrentará a él en una pelea con espadas láser, durante la cual Darth Vader le confiesa que es su padre y trata de atraerle al lado oscuro.
             Pero Luke consigue escapar y se lanza hacia el Halcón Milenario pilotado por Lando y en el que va Leia, tras lograr liberarse de sus carceleros gracias al propio Lando que aprecia pese a todo a Han Solo al que tratará de ayudar.
             Juntos los tres huirán tratando de encontrar a Han Solo, convertido en estatua de carbón por los cazarecompensas, dispuestos a entregar un botín tan valioso a Jabba el Hutt.
-                     
+                   
             </p>
+        </div>
+    </div>
 
-        <img src="imagenes/Acerca de/06jpg.jpg">
-        <a href="https://www.filmaffinity.com/es/film226172.html">Leer más en Filmaffinity</a>
-        <h2>Episodio VI: Retorno del Jedi</h2>
-        <p>Luke decide abandonar temporalmente su formación junto a Yoda para acudir a rescatar a Han Solo, prisionero de Jabba en Tatooine, su planeta de origen.
+    <div>
+        <div>
+            <img src="imagenes/Acerca de/06jpg.jpg">
+            <a href="https://www.filmaffinity.com/es/film226172.html">Leer más en Filmaffinity</a>
+        </div>
+        <div>
+            <h2>Episodio VI: Retorno del Jedi</h2>
+            <p>Luke decide abandonar temporalmente su formación junto a Yoda para acudir a rescatar a Han Solo, prisionero de Jabba en Tatooine, su planeta de origen.
             Ofrece a Jabba sus robots cuando llega un cazarecompensas que ofrece a Chewbacca. La cazarecompensas, que no es otra que Leia, consigue liberar a Han de la carbonita, aunque es descubierta y convertida en esclava de Jabba. Luke se enfrentará a él valiéndose de sus poderes pese a los que es atrapado y arrojado a un monstruo al que consigue destruir provocando el enfado de Jabba que condena a los dos hombres a morir arrojados a una duna donde serán devorados por un enorme monstruo, mientras convierte a Leia en su esclava.
             Conseguirán liberarse gracias a la ayuda de R2D2. Luke derrota gracias a su espada láser a los hombres de Jabba, que acabará muriendo a manos de Leia.
             Tras rescatar a Solo, Luke regresa junto a Yoda, que da por terminado su aprendizaje y que le confirma que Vader es su padre, justo antes de morir. Y Obi Wan le confesará entonces que tiene una hermana melliza, que él adivina que es Leia.
@@ -120,37 +156,57 @@
             Tras la reconciliación Luke consigue escapar de la Estrella de la Muerte antes de que Lando consiga destruirla. Lo que todos celebrarán con gran alegría.
             
             </p>
+        </div>
+    </div>
 
-        <img src="imagenes/Acerca de/07jpg.jpg">
-        <a href="https://www.filmaffinity.com/es/film569795.html">Leer más en Filmaffinity</a>
-        <h2>Episodio VII: Despertar de la fuerza</h2>
-        <p>Más de treinta años han pasado desde la caída del Imperio Galáctico, derrotado por la Alianza Rebelde. Pero, la galaxia se encuentra todavía en guerra y no ha acabado con la tiranía y la opresión. Una Nueva República ha surgido, aunque su gobierno es frágil, un mero títere. Aprovechando la inestabilidad del sistema político y las diferencias de las diversas corrientes republicanas, un misterioso guerrero, Kylo Ren, sube al poder y amenaza la paz galáctica. El siniestro Ren lidera la Primera Orden, una fuerza leal a la memoria de Lord Vader y Palpatine, surgida de las cenizas del Imperio Galáctico. Su objetivo es crear un nuevo ejército y completar una nueva Estrella de la Muerte, ultra-potente, que ponga en peligro el equilibrio de la Fuerza.
+    <div>
+        <div>
+            <img src="imagenes/Acerca de/07jpg.jpg">
+            <a href="https://www.filmaffinity.com/es/film569795.html">Leer más en Filmaffinity</a>
+        </div>
+        <div>
+            <h2>Episodio VII: Despertar de la fuerza</h2>
+            <p>Más de treinta años han pasado desde la caída del Imperio Galáctico, derrotado por la Alianza Rebelde. Pero, la galaxia se encuentra todavía en guerra y no ha acabado con la tiranía y la opresión. Una Nueva República ha surgido, aunque su gobierno es frágil, un mero títere. Aprovechando la inestabilidad del sistema político y las diferencias de las diversas corrientes republicanas, un misterioso guerrero, Kylo Ren, sube al poder y amenaza la paz galáctica. El siniestro Ren lidera la Primera Orden, una fuerza leal a la memoria de Lord Vader y Palpatine, surgida de las cenizas del Imperio Galáctico. Su objetivo es crear un nuevo ejército y completar una nueva Estrella de la Muerte, ultra-potente, que ponga en peligro el equilibrio de la Fuerza.
 
             Frente a este despertar amenazante, muchos de los héroes de antes, Leia, Han Solo, Chewbacca, R2-D2 y C-3PO, todavía activos, luchan en la resistencia. A ellos se les unirán nuevos personajes. El soldado imperial Finn, arrestado en una celda de prisión, conocerá a Poe Dameron, piloto enviado por Leia para una misión importante. Este soldado de las fuerzas de asalto tiene en su poder un arma legendaria: la espada de luz que una vez perteneció a Anakin Skywalker. Poe y Finn se las arreglarán para escapar.
             
             Los fugitivos acabarán en el planeta desierto Jakku. Allí, se encontrarán con Rey, una joven que lleva consigo una espada láser y que va acompañada de un droide conocido como BB-8. Este encuentro cambiará sus vidas y les embarcará en un intenso viaje para encontrar al guerrero más poderoso de la galaxia, el Maestro Jedi Luke Skywalker. Además, durante su aventura deberán enfrentarse a la Capitán Phasma de la Primera Orden, que lidera una tropa de asalto en búsqueda del desertor Finn. El objetivo final de los rebeldes será frenar los malvados planes de Kylo Ren, temible guerrero que empuña un sable de luz de color rojo de diseño inusual, y que representa a las poderosas fuerzas del lado oscuro. </p>
+        </div>
+    </div> 
+    
+    <div> 
+        <div>
+            <img src="imagenes/Acerca de/08.jpg">
+            <a href="https://www.filmaffinity.com/es/film668878.html">Leer más en Filmaffinity</a>
 
-        <img src="imagenes/Acerca de/08.jpg">
-        <a href="https://www.filmaffinity.com/es/film668878.html">Leer más en Filmaffinity</a>
+        </div>    
+        <div>
         <h2>Episodio VIII: Los últimos Jedis</h2>
           <p>Los Últimos Jedi comienza inmediatamente después de los acontecimientos de Star Wars: Episodio VII El Despertar de la Fuerza, establecida treinta años después de la conclusión de la trilogía original de Star Wars. Continúa la historia de Rey y su descubrimiento del exiliado Maestro Jedi Luke Skywalker, junto con la historia de la guerra entre la Resistencia de la General Leia Organa y la Primera Orden.
             La película fue lanzada el 14 de diciembre de 2017 en el Reino Unido, México, América Latina y países europeos; el 15 de diciembre de 2017 en América del Norte; y el 5 de enero de 2018 en China. Algunos cines de América del Norte ofrecieron proyecciones anticipadas especiales limitadas en la noche del 14 de diciembre en lugar de la presentación tradicional de medianoche. Los Últimos Jedi recibió críticas positivas, y obtuvo cuatro nominaciones en la 90.ª entrega de los Premios de la Academia, incluyendo Mejor Banda Sonora Original y Mejores Efectos Visuales. Su secuela, Star Wars: Episodio IX El Ascenso de Skywalker, fue lanzada el 20 de diciembre de 2019.</p>
-        <img src="imagenes/Acerca de/09.jpg">
-        <a href="https://www.filmaffinity.com/es/film738787.html">Leer más en Filmaffinity</a>
-        <h2>Episodio IX: El ascenso de Skywalker</h2>
-        <p>Un año después de los sucesos de Los últimos Jedi , una transmisión usando la voz del presunta fallecido Emperador Galáctico Palpatine se transmite a través de la galaxia, que amenaza con venganza. El Líder Supremo Kylo Ren lidera un asalto vicioso contra colonos alazmec en un Mustafar en curación, buscando un orientador Sith propiedad del abuelo de Ren, Darth Vader. Ren quiere usar el dispositivo como guía en su búsqueda de la fuente de la transmisión, que percibe como una amenaza para su poder. El Líder Supremo masacra a muchos sectarios alazmec junto con sus soldados de asalto antes de recuperar el dispositivo y colocarlo en su nave, permitiendo que su poder oscuro lo guíe a través de la nebulosa carmesí que rodea el legendario mundo Sith de Exegol. 
+        </div>
+    </div> 
+
+    <div>
+        <div>
+            <img src="imagenes/Acerca de/09.jpg">
+            <a href="https://www.filmaffinity.com/es/film738787.html">Leer más en Filmaffinity</a>
+        </div>
+        <div>
+            <h2>Episodio IX: El ascenso de Skywalker</h2>
+            <p>Un año después de los sucesos de Los últimos Jedi , una transmisión usando la voz del presunta fallecido Emperador Galáctico Palpatine se transmite a través de la galaxia, que amenaza con venganza. El Líder Supremo Kylo Ren lidera un asalto vicioso contra colonos alazmec en un Mustafar en curación, buscando un orientador Sith propiedad del abuelo de Ren, Darth Vader. Ren quiere usar el dispositivo como guía en su búsqueda de la fuente de la transmisión, que percibe como una amenaza para su poder. El Líder Supremo masacra a muchos sectarios alazmec junto con sus soldados de asalto antes de recuperar el dispositivo y colocarlo en su nave, permitiendo que su poder oscuro lo guíe a través de la nebulosa carmesí que rodea el legendario mundo Sith de Exegol. 
             Aterrizando en la base de una enorme ciudadela, Ren enciende su sable y entra. Desciende por una plataforma flotante a una gran cámara llena de estatuas gastadas de leyendas Sith. Mientras desciende a sus profundidades, escucha la voz de Sidious diciéndole que Snoke lo entrenó bien. Ren responde que había asesinado a Snoke, pero la voz responde que él «creó» a Snoke. 
             Los relámpagos bailan alrededor del joven adepto del lado oscuro mientras escucha las palabras burlonas, dichas en una voz que pasa de la de Sidious a la de Snoke y, finalmente, a la de Vader: «Yo he sido cada voz... que has llegado a oír ... dentro de tu mente». 
             Ren, imperturbable, avanza hacia la ciudadela, caminando durante algún tiempo entre las imponentes efigies. Con su camino iluminado por su sable, el joven finalmente se adentra en un laberinto de equipo desconocido atendido por acólitos con túnica. Cilindros altos llenos de un líquido dorado enfermizo sostienen cuerpos inmóviles e incompletos con el rostro mutilado del muerto Snoke, confirmando las palabras anteriores de la voz. Entre estas máquinas, unidas por innumerables tubos y cables a máquinas de apoyo y sustento, se encuentra la figura demacrada y decadente de Darth Sidious, la verdadera identidad del exemperador Palpatine en persona. 
             Sidious habla, explicándole al Líder Supremo que ha muerto antes, y que el lado oscuro es un camino hacia muchas habilidades que algunos consideran «antinaturales», haciendo eco de sus palabras al abuelo de Ren décadas antes en La Venganza de los Sith. Ren levanta su sable, pero la amenaza parece dejar a Sidious imperturbable. Ren le pregunta a Sidious qué podría darle, y el Señor Oscuro responde que puede darle todo: un nuevo Imperio. 
             En la superficie de Exegol, el suelo helado se agrieta y cede cuando innumerables Destructores Estelares clase Xyston emergen del mar helado hacia el cielo tempestuoso. A medida que la flota se eleva, Sidious ofrece darle a Ren el mando de lo que él llama la Orden Final a cambio de matar a Rey, la último Jedi, y así terminar con la Orden Jedi y cumplir lo que su abuelo, Vader, no pudo. Le dice a Ren que tomará su lugar como el nuevo emperador, pero también le advierte que Rey no es quien él cree que es. Ren le pregunta al Señor Oscuro quién es Rey, mientras un trueno estalla. 
         </p>
-
+        </div>
     </div>
 
     <div>
         <h2>Peliculas y series de Starwars</h2>
-        <a>Si quieres saber más pulsa aquí</a>
+        <a href="Películasdedisney.html" name="historias"class="header_historias">Si quieres saber más</a>
     </div>
 
     <footer>

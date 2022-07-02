@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Búsqueda de personajes</title>
+        <link rel="icon" type="image/svg+xml" href="imagenes/logoimperio.png" sizes="any">
+        <link rel="stylesheet" href="frontend.css">
+        <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
+        
+    
+    </head>
 <body>
-    <header>
-        <div>
-            <img> //icono de star wars
-            <h2>Busqueda de personajes</h2>
+    <header class="header">
+        
+        <div class="container">
+            
+            <img src="imagenes/StarWarsfuego.jpg" class="container_imagen">
         </div>
-        <div name="busqueda"> //menu
-            <a>Home</a>
-            <a>Acerca de Star wars</a>
+
+        <div class="header_container_menu">
+            
+            <a href="acercade.html" name="acercade" class="header_acercade">Acerca de Star Wars</a>
+            <a href="home.html" name="busqueda"class="header_busqueda">Inicio</a>
+            <a href="Películasdedisney.html" name="historias"class="header_historias">Otras historias de Starwars</a>
         </div>
     </header>
-    <div>
-        <img> //imagen grande de Starwars
-    </div>
-    <div>
+        
+    <div class="container_busqueda">
         <h2>Prueba nuestro buscador de Personajes</h2>
-        <p>Este buscador es para que puedas buscar por nombre los personajes más famosos de las películas</p>
+        <p>Este buscador es para que puedas encontrar por nombre los personajes más famosos de las películas.</p>
 
     </div>
-    <div> //4 o 5 columnas
-        <img>
-        <h2></h2>//Nombre del personajes
-        <p></p>//descripcion del personaje
+    <div class="Personajes"> 
+        <div>
+            <img src="imagenes/busqueda/c3po.jpg" class="Personajes_c3po"/>
+            <h2>C3-PO</h2>
+            <p>Es un androide, 
+        diseñado para el servicio de los humanos para llevar a cabo dichas tareas,
+         para lo que domina seis millones de formas de comunicación.</p>
+        </div>
 
-        <img>
-        <h2></h2>//Nombre del personajes
-        <p></p>//descripcion del personaje
+        <div>
+            <img src="imagenes/busqueda/luck.jpg"class="Personajes_Luck"/>
+            <h2>Luck Skywalker</h2>
+            <p>Fue un legendario héroe de guerra y Jedi que fundó la Nueva Orden Jedi.
+             Era el hijo del Caballero Jedi Anakin Skywalker y la senadora Padmé Amidala de Naboo,
+              además hermano mellizo de Leia Organa.</p>
+        </div>
 
-        <img>
-        <h2></h2>//Nombre del personajes
-        <p></p>//descripcion del personaje
+        <div>
+            <img src="imagenes/busqueda/r2d2.jpg"class="Personajes_r2d2"/>
+            <h2>R2-D2</h2>
+            <p> Es un droide astromecánico, contraparte, amigo de C-3PO y amigo de la resistencia. </p>
+        </div>
 
-        <img>
-        <h2></h2>//Nombre del personajes
-        <p></p>//descripcion del personaje
+        <div>
+            <img src="imagenes/busqueda/yoda.jpg"class="Personajes_yoda"/>
+            <h2>Yoda</h2>
+            <p>Yoda fue un miembro Jedi de una especie misteriosa. Era un reverenciado Maestro Jedi, 
+            era famoso dentro de la Orden por su sabiduría, poderes de la Fuerza. Vivió durante casi 900 años.</p>
+        </div>
 
+        <div>
+            <img src="imagenes/busqueda/vader.jpg"class="Personajes_vader"/>
+            <h2>Darth Vader</h2>
+            <p>Es un temible cyborg y sith mano derecha del Emperador de la galaxia, Darth Sidious,
+             que lleva adelante una brutal opresión en la galaxia cazando a los activistas de la Alianza Rebelde.</p>
+        </div>
     </div>
-    <div>
-        <input>Escribe el nombre del personaje </input>
-        <button>Aceptar</button>
-    </div>
-    <div>
-    <h6>Aquí encontrarás todos los nombres de los personajes de Star wars</h6>
-    <select id="selector">
-        <option></option>
-    </div>
-    </select>
-
-    <div>
-        <input>Escribe el nombre de la nave </input>
-        <button>Aceptar</button>
-    </div>
-
+     
     <div>
         <input type="text" id="inputbusqueda">
 
@@ -68,15 +79,16 @@
 
     </div>
 
-
-
     <footer>
-        <div>
-            <img> //icono de Starwars?
+        <div class=footer_container>
+            <img src="imagenes/logorebelion.png" class="footer_imagen" alt="">
             <h3>Copyright</h3>
             <h3>Vanesa Rogero Paredes</h3>
         </div>
     </footer>
-    <script src="frontend.js"></script>
+    
+    <script src="frontend.js" >
+    
+        </script>
 </body>
 </html>
