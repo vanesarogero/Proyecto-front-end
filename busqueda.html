@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Búsqueda de personajes</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="imagenes/logoimperio.png"
-      sizes="any"
-    />
-    <link rel="stylesheet" href="frontend.css" />
-    <link
-      href="https://allfont.net/allfont.css?fonts=star-jedi"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <img src="imagenes/StarWarsfuego.jpg" class="container-imagen" />
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="icon" type="image/svg+xml" href="imagenes/logoimperio.png" sizes="any">
+    <link rel="stylesheet" href="frontend.css">
+    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
+                
 
-      <div class="header-container-menu">
-        <a href="acercade.html" name="acercade" class="header-acercade"
-          >Acerca de Star Wars</a
-        >
-        <a href="home.html" name="busqueda" class="header-busqueda">Inicio</a>
-        <a
-          href="Películasdedisney.html"
-          name="historias"
-          class="header-historias"
-          >Otras historias de Starwars</a
-        >
-      </div>
+</head>
+<body>
+    <header class="header"></header>
+    <nav class="header_container_menu">
+        <img src="imagenes/starwars-letras-amarillas.png" class="header_icono">
+        <ul class="header_container_menu_list">
+        <li><a class="header_inicio">Búsqueda</a></li>
+        <li><a href="peliculas.html" name="acercade" class="header_acercade">Películas Star Wars</a></li>
+        <li><a href="home.html" name="busqueda"class="header_busqueda">Home</a></li>
+        <li><a href="acerdemi.html" name="historias"class="header_historias">Acerca de mí</a></li>
+        
+        </ul>
+    </nav>
+    <div class="container">
+                
+      <img src="imagenes/StarWarsfuego.jpg" class="container_imagen">
+    </div>
+
     </header>
 
     <div class="container-busqueda">
@@ -104,13 +96,13 @@
     <div id="resultado-busqueda"></div>
 
     <footer>
-      <div class="footer-container">
-        <img src="imagenes/logorebelion.png" class="footer-imagen" alt="" />
-        <h3>Copyright</h3>
-        <h3>Vanesa Rogero Paredes</h3>
+      <div class="footer">
+          <h3 class="footer_title">Copyright</h3>
+          <h3 class="footer_title2">Vanesa Rogero Paredes</h3>
       </div>
-    </footer>
-
+  </footer>
+      <script src="frontend.js"></script>
+  
     <script src="frontend.js"></script>
   </body>
 </html>

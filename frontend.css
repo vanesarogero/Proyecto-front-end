@@ -1,9 +1,9 @@
 /*Fuentes*/
-@font-face {
-    font-family: 'Star Jedi', arial;
+/* @font-face {
+    font-family: 'Star Jedi';
     font-size: 48px;
     text-shadow: 4px 4px 4px #FFE81F;
-  }
+  } */
 
 
   /* NOTE: Generic styles */
@@ -47,18 +47,22 @@
     background-color: #FFE81F;
     border-radius: 6px;
     border: 1px solid #ffffff;
-    display:flex;
-    justify-content: center;
+    
     }
 
-
+    li{
+    padding: 0;
+    list-style: none;
+    }
     
+      
   body {
       font-family: 'Star Jedi', arial;
       background-color: #000000;
       text-align: center;
       margin-right: 10px;
       margin-left: 10px;
+      display: block;
       } 
   
   .container{
@@ -94,29 +98,67 @@
       display:flex;
       flex-direction:row;
       flex-wrap:wrap;
-      display:flex;
-      justify-content:center;
-                  }
+      background-color: #ffe81f;
+      justify-content: space-between;
+      max-width: 100%;
+      align-items: center;
+      
+                     }
   .header_container_menu>div{
-    width: 33%;
+    width: 33%;  }
+
+  .header_container_menu_list{
+
+    webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: right;
+       
+    
   }
+  .header_icono{
+    max-width: 100px;
+    max-height: 100px;
+    justify-content: right;
+  
+  }
+
+ 
   .header_acercade {
-    margin-right: 80px;
-  }
+    margin-right: 30px;
+    background-color: none;
+      }
   .header_busqueda{
-    margin-right: 80px;
+    margin-right: 30px;
+    background-color: none;
       }
   .header_historias{
-    margin-right: 80px;
+    margin-right: 30px;
+    background-color: none;
       }
   .header_home{
-    margin:80px;
+    margin-right:30px;
+    background-color: none;
 
   }
+  .header_inicio{
+    background-color:black;
+    color:white;
+    margin-right:30px;
+  }
+  
   .container2_parrafo1 {
     text-align: center;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   .container2_parrafo2{
     text-align: center;
@@ -124,23 +166,189 @@
     margin-right: 60px;
 
   }
+  .george .disney .grid .grid--2-cols{
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 50px;
 
-  .george{
-    -ms-grid-columns: 1fr 80px 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 80px;
   }
-  .george>div{
-    width: 50%;
-  }
-  .george_img{
+.george_img{
+  max-height: 60%;
+  max-width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  border-style: none;
+  margin-left: 300px;
+  margin-right: center;
+  text-align: center;
+  
+}
+.george_enlace{
+  max-width:50%;
+  max-height: 20%;
+  margin-right: 120px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+.george_columna2{
+  margin-right: 250px;
+  align-content: center;
+}
+.george_title{
+  size: 20px;
+}
+
+.george_parrafo{
+  text-align: center;
+  size: 12px;
+  
+}
+/*disney*/
+.disney_img{
+  max-height: 60%;
+  max-width: 50%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: block;
+  border-style: none;
+  margin-left: 250px;
+  text-align: center;
+  
+}
+.disney_enlace{
+  max-width:50%;
+  max-height: 20%;
+  margin-right: 120px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+.disney_columna2{
+  margin-right: 250px;
+  align-content: center;
+}
+.disney_title{
+  margin-top:-20px;
+  margin-bottom: 10px;
+  size: 20px;
+  display:flex
+}
+
+.disney_parrafo{
+  text-align: center;
+  size: 12px;
+  
+}
+.comic2_title{
+  margin-bottom: 100px;
+}
+.comic2_parrafo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+
+.comic{
+  max-width:100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 174px 30px 174px 30px 174px 30px 174px;
+    grid-template-columns: 1fr repeat(4, 174px);
+    grid-gap: 60px 30px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    max-height: 450px;
+}
     
-    width: 50%;
-    height: 400px;
-        
-  }
 
-  //columas
+
+.comic_columna1_img{
+  max-width: 100%;
+  max-height: 40%;
+}
+
+.comic_columna1_title{
+  font-size: 20px;
+}
+
+.comic_columna2_img{
+  max-width: 100%;
+  max-height: 40%;
+}
+
+.comic_columna2_title{
+  font-size: 20px;
+}
+
+.comic_columna3_img{
+  max-width: 100%;
+  max-height: 40%;
+}
+
+
+.comic_columna3_title{
+  font-size: 20px;
+
+}
+
+.comic_columna4_img{
+  max-width: 100%;
+  max-height: 40%;
+}
+
+.comic_columna4_title{
+  font-size: 20px;
+}
+
+
+.comic_columna5_img{
+  max-width: 100%;
+  max-height: 40%;
+}
+
+.comic_columna5_title{
+  font-size: 20px;
+}
+/*Acerca de Star Wars*/
+
+.episodio{
+  position: relative;
+    min-height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 100px;
+    max-width: 100%;
+
+}
+
+/*episodio1*/
+
+.title{
+font-size: 30px;
+text-align: center;
+}
+.imagen_episodio{
+  max-width: 184px ;
+  max-height: 274px;
+}
+
+
+
+
+  /*columas*/
 
   .grid {
     display: -ms-grid;
@@ -154,6 +362,7 @@
     grid-gap: 80px;
   }
   
+  /*
   .grid--3-cols {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
@@ -175,20 +384,32 @@
   }
 
 
-  
+  */
 
 
 
-  footer{
+  .footer{
     background-color: #FFE81F;
     margin:10px;
-    width: 100%;
-    height: 20%;
-    font-size: 30px;
+    max-width: 100%;
+    max-height: 20%;
+    font-size: 15px;
     align-items: center;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 32px;
+    -ms-grid-columns: 1fr 80px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    margin-top: 200px;
+    
 
   }
-.footer_imagen{
-  max-width: 50px;
-  max-height: 50px;
-}
+
+  .footer_title{
+    align-items:right ;
+  }
+  .footer_title2{
+    align-items:left ;
+
+  }
