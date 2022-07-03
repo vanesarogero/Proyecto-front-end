@@ -7,11 +7,21 @@
     <title>Star Wars</title>
     <link rel="icon" type="image/svg+xml" href="imagenes/logoimperio.png" sizes="any">
     <link rel="stylesheet" href="frontend.css">
-    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
+    <!-- <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css"> -->
     
 
 </head>
 <body>
+    <nav class="header_container_menu">
+        <img src="imagenes/starwars-letras-amarillas.png" class="header_icono">
+        <ul class="header_container_menu_list">
+        <li><a class="header_inicio">Home</a></li>
+        <li><a href="acercade.html" name="acercade" class="header_acercade">Acerca de Star Wars</a></li>
+        <li><a href="busqueda.html" name="busqueda"class="header_busqueda">Buscador de personajes</a></li>
+        <li><a href="Películasdedisney.html" name="historias"class="header_historias">Otras historias de Starwars</a></li>
+        
+        </ul>
+    </nav>
     <header class="header">
         
         <div class="container">
@@ -19,31 +29,26 @@
             <img src="imagenes/StarWarsfuego.jpg" class="container_imagen">
         </div>
 
-        <div class="header_container_menu">
-            
-            <a href="acercade.html" name="acercade" class="header_acercade">Acerca de Star Wars</a>
-            <a href="busqueda.html" name="busqueda"class="header_busqueda">Buscador de personajes</a>
-            <a href="Películasdedisney.html" name="historias"class="header_historias">Otras historias de Starwars</a>
-        </div>
+        
     </header>
 
     <div class="Cabecera">
         <div class="container2">
             <h1>¿Qué es Star Wars?</h1>
-            <p class="container2_parrafo1">Si estás aquí es porque aún no sabes lo que es Star Wars.<br> Aunque no comprendo en que galaxia vives pero te contaré todo lo que necesitas saber en esta página.</br></p>
-            <p class="container2_parrafo1">Star Wars, conocida también en español como La guerra de las galaxias,es una franquicia y universo compartido compuesta primordialmente de una serie de películas concebidas por el cineasta estadounidense George Lucas en la década de 1970, y producidas y distribuidas por The Walt Disney Company a partir de 2012. Su trama describe las vivencias de un grupo de personajes que habitan en una galaxia ficticia e interactúan con elementos como «la Fuerza», un campo de energía metafísico y omnipresente10​ que posee un «lado luminoso» impulsado por la sabiduría, la nobleza y la justicia y utilizado por los Jedi, y un «lado oscuro» usado por los Sith y provocado por la ira, el miedo y el odio.</p>
+            <p class="container2_parrafo1">Si estás aquí es porque aún no sabes lo que es Star Wars. Aunque no comprendo en que galaxia vives pero te contaré todo lo que necesitas saber en esta página.</p>
+            <p class="container2_parrafo2">Star Wars, conocida también en español como La guerra de las galaxias,es una franquicia y universo compartido compuesta primordialmente de una serie de películas concebidas por el cineasta estadounidense George Lucas en la década de 1970, y producidas y distribuidas por The Walt Disney Company a partir de 2012. Su trama describe las vivencias de un grupo de personajes que habitan en una galaxia ficticia e interactúan con elementos como «la Fuerza», un campo de energía metafísico y omnipresente10​ que posee un «lado luminoso» impulsado por la sabiduría, la nobleza y la justicia y utilizado por los Jedi, y un «lado oscuro» usado por los Sith y provocado por la ira, el miedo y el odio.</p>
         </div>
     </div>
 
-    <div class="george">
-        <div class="george_columna1"> //dos columnas
-            <img src="imagenes/El director George Lucas.jpg" id="george_img"> //primera columna
-            <a href="https://es.wikipedia.org/wiki/George_Lucas" id="george_enlace">Quiero saber más sobre George Lucas</a>
+    <article class="george grid grid--2-cols">
+        <div class="george_columna1"> 
+            <img src="imagenes/El director George Lucas.jpg" class="george_img"> 
+            <a href="https://es.wikipedia.org/wiki/George_Lucas" class="george_enlace">Quiero saber más sobre George Lucas</a>
         </div>
         <div class="george_columna2">
             <h2 class="george_title">¿Quién inventó Star wars?</h2> //segunda columan
-            <p class="george_parrafo">George Lucas concluyó el rodaje de La guerra de las galaxias en el 
-         1977, un gran proyecto que tenía en mente desde los dieciocho años,
+            <p class="george_parrafo">George Lucas, concluyó el rodaje de La guerra de las galaxias en el 
+         1977, un gran proyecto que tenía en mente desde los 18 años,
           concebido mientras se recuperaba de un accidente de coche que casi le costó la vida.
            La tozudez del creador se impuso a las escasas expectativas que, por aquellos años, 
            despertaba la ciencia ficción entre los productores. 
@@ -52,16 +57,16 @@
           a caballo de unos personajes heroicos perfectamente dibujados según el patrón de la épica clásica
            y unos soberbios efectos especiales al servicio de la narración.</p> 
         </div> 
-    </div> 
+    </article> 
 
-    <div class="disney">
+    <div class="disney grid grid--2-cols">
         <div class="disney_columna1">
-            <img src="imagenes/disneystarwars.jpeg">
-            <a href="#acercade">Quiero saber más sobre Star Wars</a>
+            <img clss="disney_img" src="imagenes/disneystarwars.jpeg">
+            <a class="disney_enlace"  href="acercade.html">Quiero saber más sobre Star Wars</a>
         </div>
         <div class="disney_columna2">
-            <h2>Disney Star Wars</h2> 
-            <p>La guerra de las Galaxias las primero 6 episodios pertenecen a George Lucas y las siguientes 3 películas de la saga a Disney.
+            <h2 class="disney_title">Disney Star Wars</h2> 
+            <p class="disney_parrafo">La guerra de las Galaxias las primero 6 episodios pertenecen a George Lucas y las siguientes 3 películas de la saga a Disney.
          George Lucas vendió sus derechos en 2012, por el valor de 4.050 millones. Se decantó por una vida familiar que seguir sacrificando
          su vida por estas sagas, aunque el ya había trabajado en la historia desde hacía años. Disney decidió seguir su propio camino en las
           siguientes trilogías. Muchos de los más frikis, nos encanta decir que no han sido tan buenas como las anteriores,
@@ -69,47 +74,55 @@
         </div>
     </div>
 
+    <div class="comic2">
+        <h2 class="comic2_title">Star Wars Comic</h2>
+        <p class="comic2_parrafo">La fama de Star Wars, llegó tambien a los comics
+             y aquí os dejo la importancia de los comic, en la historia de Star Wars.
+             Charles Lippincott, el supervisor de publicidad contratado por George Lucas
+            para dar a conocer su nueva película de ciencia ficción titulada
+            Star Wars, entre otras muchas brillantes ideas que tuvo,
+            pensó que tener un cómic basado en la película y creado por la editorial Marvel 
+            sería una manera increíble para darla a conocer entre los fans.
+            Inicialmente se acercó a Stan Lee en 1975 antes del lanzamiento
+            de la película, como un medio para atraer a su más probable audiencia. Lee inicialmente se negó a considerar una propuesta de este tipo hasta que la película estuvo definitivamente lista, y solo se convenció de lo contrario en una segunda reunión organizada por Roy Thomas en 1976, que por entonces era, como se especificó anteriormente, el editor en jefe de Marvel y, al mismo tiempo, un gran fan del género de la space-opera. Stan Lee dio luz verde al proyecto cuando, entre otras cosas,
+            escuchó que el actor Alec Guinness estaría involucrado en la película.</p>
+    </div>
+    
+
     <div class="comic"> 
         <div class="comic_columna1">
-            <img src="imagenes/vader01.jpg"> 
-            <h2>Darth Vader 01</h2>
-            <p></p>
+            <img class="comic_columna1_img" src="imagenes/vader01.jpg">
+           <h2 class="comic_columna1_title">Darth Vader 01</h2>
+            
         </div>
         <div class="comic_columna2">
-            <img src="imagenes/vader02.jpg"> 
-            <h2>Darth Vader 02</h2>
-            <p></p>
+            <img class="comic_columna2_img" src="imagenes/vader02.jpg">
+            <h2 class="comic_columna2_title">Darth Vader 02</h2>
         </div>
 
         <div class="comic_columna3">
 
-            <img src="imagenes/01L.jpg"> 
-            <h2></h2>//nombre del comic
-            <p></p>
+            <img class="comic_columna3_img" src="imagenes/01L.jpg"> 
+            <h2 class="comic_columna3_title">Star Wars 01</h2> >
         </div>
 
         <div class="comic_columna4">
-            <img src="imagenes/02.jpg"> 
-            <h2></h2>//nombre del comic
-            <p></p>
+            <img class="comic_columna4_img" src="imagenes/02.jpg"> 
+            <h2 class="comic_columna4_title">Star Wars 02</h2>
+            
         </div>
 
         <div class="comic_columna5"> 
 
-            <img src="imagenes/bo8untyhunters.jpg">
-            <h2>Bounty Hounters</h2>
-            <p></p>
+            <img class="comic_columna5_img" src="imagenes/bo8untyhunters.jpg">
+            <h2 class="comic_columna5_title">Bounty Hounters</h2>
         </div>
-
-    
-
     </div>
 
     <footer>
         <div class="footer">
-            <img> //icono de Starwars?
-            <h3>Copyright</h3>
-            <h3>Vanesa Rogero Paredes</h3>
+            <h3 class="footer_title">Copyright</h3>
+            <h3 class="footer_title2">Vanesa Rogero Paredes</h3>
         </div>
     </footer>
     <script src="frontend.js"></script>
