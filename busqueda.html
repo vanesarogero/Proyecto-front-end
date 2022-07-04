@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars</title>
+    <title>Busqueda</title>
     <link rel="icon" type="image/svg+xml" href="imagenes/logoimperio.png" sizes="any">
     <link rel="stylesheet" href="frontend.css">
     <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
@@ -16,10 +16,11 @@
     <nav class="header_container_menu">
         <img src="imagenes/starwars-letras-amarillas.png" class="header_icono">
         <ul class="header_container_menu_list">
-        <li><a class="header_inicio">Búsqueda</a></li>
-        <li><a href="peliculas.html" name="acercade" class="header_acercade">Películas Star Wars</a></li>
-        <li><a href="home.html" name="busqueda"class="header_busqueda">Home</a></li>
-        <li><a href="acerdemi.html" name="historias"class="header_historias">Acerca de mí</a></li>
+          <li><a class="header_inicio">Búsqueda</a></li>
+          <li><a href="peliculas.html" name="acercade" class="header_acercade">Películas Star Wars</a></li>
+          <li><a href="home.html" name="busqueda"class="header_busqueda">Home</a></li>
+          <li><a href="acerdemi.html" name="acercademi"class="header_busqueda">Acerca de mi</a></li>
+            
         
         </ul>
     </nav>
@@ -34,66 +35,67 @@
       <h2>Prueba nuestro buscador de Personajes</h2>
       <p>
         Este buscador es para que puedas encontrar por nombre los personajes más
-        famosos de las películas.
+        famosos de las películas. <br>Te dejamos algunos de nuestros preferidos para que puedas sacar toda la información.
       </p>
     </div>
-    <div class="Personajes">
-      <div class="Personajes-columna1">
-        <img src="imagenes/busqueda/c3po.jpg" class="personajes-c3po" />
-        <h2>C3-PO</h2>
-        <p>
-          Es un androide, diseñado para el servicio de los humanos para llevar a
-          cabo dichas tareas, para lo que domina seis millones de formas de
-          comunicación.
-        </p>
-      </div>
-
-      <div class="Personajes-columna2">
-        <img src="imagenes/busqueda/luck.jpg" class="personajes-Luck" />
-        <h2>Luck Skywalker</h2>
-        <p>
-          Fue un legendario héroe de guerra y Jedi que fundó la Nueva Orden
-          Jedi. Era el hijo del Caballero Jedi Anakin Skywalker y la senadora
-          Padmé Amidala de Naboo, además hermano mellizo de Leia Organa.
-        </p>
-      </div>
-
-      <div class="Personajes-columna3">
-        <img src="imagenes/busqueda/r2d2.jpg" class="personajes-r2d2" />
-        <h2>R2-D2</h2>
-        <p>
-          Es un droide astromecánico, contraparte, amigo de C-3PO y amigo de la
-          resistencia.
-        </p>
-      </div>
-
-      <div class="Personajes-columna4">
-        <img src="imagenes/busqueda/yoda.jpg" class="personajes-yoda" />
-        <h2>Yoda</h2>
-        <p>
-          Yoda fue un miembro Jedi de una especie misteriosa. Era un
-          reverenciado Maestro Jedi, era famoso dentro de la Orden por su
-          sabiduría, poderes de la Fuerza. Vivió durante casi 900 años.
-        </p>
-      </div>
-
-      <div class="Personajes-columna5">
-        <img src="imagenes/busqueda/vader.jpg" class="personajes-vader" />
-        <h2>Darth Vader</h2>
-        <p>
-          Es un temible cyborg y sith mano derecha del Emperador de la galaxia,
-          Darth Sidious, que lleva adelante una brutal opresión en la galaxia
-          cazando a los activistas de la Alianza Rebelde.
-        </p>
-      </div>
-    </div>
-
     <div class="busqueda">
       <input type="text" id="input-busqueda" class="busqueda-introducetexto" />
 
       <a id="busqueda-boton">Comienza tu busqueda</a>
     </div>
     <div id="resultado-busqueda"></div>
+
+    <div class="comic">
+      <nav class="Personajes_columna1">
+        
+        <img src="imagenes/busqueda/luck.jpg" class="personajes_img" />
+        <h2 class="personajes_title">Luck Skywalker</h2>
+        <p>
+          Fue un legendario héroe de guerra y Jedi que fundó la Nueva Orden
+          Jedi. Era el hijo del Caballero Jedi Anakin Skywalker y la senadora
+          Padmé Amidala de Naboo, además hermano mellizo de Leia Organa.
+        </p>
+      </nav>
+
+      <nav class="Personajes_columna2">
+        <img src="imagenes/busqueda/c3po.jpg" class="personajes_img" />
+        <h2 class="personajes_title2">C3-PO</h2>
+        <p>
+          Es un androide, que domina seis millones de formas de
+          comunicación.
+        
+        </p>
+      </nav>
+
+      <nav class="Personajes_columna3">
+        <img src="imagenes/busqueda/r2d2.jpg" class="personajes_img" />
+        <h2 class="personajes_title2">R2-D2</h2>
+        <p>
+          Es un droide astromecánico, contraparte, amigo de C-3PO y amigo de la
+          resistencia.
+        </p>
+      </nav>
+
+      <div class="Personajes_columna4">
+        <img src="imagenes/busqueda/yoda.jpg" class="personajes_img" />
+        <h2 class="personajes_title2">Yoda</h2>
+        <p>
+          Yoda fue un miembro Jedi de una especie misteriosa. Era un
+          reverenciado Maestro Jedi. Vivió durante casi 900 años.
+        </p>
+      </div>
+
+      <div class="Personajes_columna5">
+        <img src="imagenes/busqueda/vader.jpg" class="personajes_img" />
+        <h2 class="personajes_title2">Darth Vader</h2>
+        <p>
+          Es un temible cyborg y sith, lleva adelante una brutal opresión en la galaxia y
+          a la Alianza Rebelde.
+        </p>
+      </div>
+    </div>
+
+ 
 
     <footer>
       <div class="footer">

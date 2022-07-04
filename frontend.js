@@ -1,70 +1,100 @@
 let personajes = [];
 
 function imprimirObjeto(personaje) {
- let elResultadoBusqueda = document.getElementById("resultado-busqueda");
+  const elResultadoBusqueda = document.querySelector("#resultado-busqueda");
   let impresion = "";
 
   impresion += `<h6 class="impresion_title">Descripcion de: ${personaje.name}"</h6>" 
+      <p>Nombre: ${personaje.name} </p>
       <p>Altura: ${personaje.mass} </p>
       <p>Peso: ${personaje.height} </p>
       <p>Color ojos: ${personaje.eye_color} </p>
       <p>Color piel: ${personaje.skin_color} </p>
       <p>Color pelo: ${personaje.hair_color} </p>
       <p>Fecha nacimiento: ${personaje.birth_year} </p>
-      <p>Género: ${personaje.gender}</p>
-      <a id="boton-busqueda" class="busqueda_favoritos">Botón de favoritos</a>`
-      ;
+      <p>Género: ${personaje.gender}</p>`;
 
   elResultadoBusqueda.innerHTML = impresion;
 }
 
 // <button id="gusta" class="impresion_boton" onclick="botonFavoritos()"></button>`;
 
-function busqueda(){
-  //if (json.next es vacio) llamaapi(json.next) 
-  Else parseo(json.array) {
-    boton
+function busquedaPersonaje(nombrePersonaje) {
+  let personaje = null;
+
+  for (let i = 0; i < personajes.length; i++) {
+    if (personajes[i].name === nombrePersonaje) {
+      personaje = personajes[i];
+    }
   }
-if (name=0){
-	fetch('https://swapi.dev/api/people/')
-	  .then(response => response.json())
-	  .then(data => recogerRespuestas(data));
 
-}
+  return personaje;
 }
 
-                
+const mapData = function (groupsPersonajes) {
+  let resultD = [];
 
-      
-function recogerRespuestas(respuestas){
-	console.log(respuestas);
- 	var impresion=""
-	var name = document.getElementById("inputbusqueda").value;
+  for (let i = 0; i < groupsPersonajes.length; i++) { // recorre cada grupo de personajes
+    let groupPersonajes = groupsPersonajes[i];
 
-	for (let i = 0; i< respuestas.results.length; i++) {
-		console.log(respuestas.results[i].name +" "+ respuestas.results[i].height +" "+respuestas.results[i].mass   )
+    for (let j = 0; j < groupPersonajes.length; j++) { // recorre cada personaje del grupo
+      let personaje = groupPersonajes[j];
 
-		if(respuestas.results[i].name ==name){
-          			  impresion += '<h6 class="impresion_title">Descripcion de:' + respuestas.results[i].name  + '</h6>'+
-          		 	 '<p class="impresion_p4">Color de ojos:'+ respuestas.results[i].height +'</p>'
-		}
+      resultD.push({
+        name: personaje.name,
+        height: personaje.height,
+        mass: personaje.mass,
+        hair_color: personaje.hair_color,
+        skin_color: personaje.skin_color,
+        eye_color: personaje.eye_color,
+        birth_year: personaje.birth_year,
+        gender: personaje.gender,
+      });
+    }
 
-	}
+  }
+  return resultD;
+};
 
- 	document.getElementById ("resultadobusqueda").innerHTML= impresion
+const pideDatos = (numPage) => {
+  const host = `https://swapi.dev/api/people/?page=${numPage}`;
+  return new Promise((resolve, reject) => {
+    fetch(host)
+      .then((response) => response.json())
+      .then(
+        (data) => {
+          resolve(data);
+        },
+        (error) => {
+          reject(error);
+        }
+      );
+  });
+};
+
+(async () => {
+  try {
+    const dataTmp = [];
+    for (let i = 0; i < 9; i++) {
+      const codCurrencies = await pideDatos(i + 1);
+      dataTmp.push(codCurrencies.results);
+    }
+    personajes = mapData(dataTmp);
+    main();
+} catch (e) {
+    console.log(e);
 }
+})();
 
-      
-function imprimirobjeto(datos){
-	console.log("entro en imprimirobjeto");
-}
+const main = function () {
+  let btnBuscador = document.querySelector("#busqueda-boton");
+  let elInputBuscador = document.querySelector("#input-busqueda");
 
-   
-function imprimirobjeto(datos){
-	console.log("entro en imprimirobjeto");
-}
+  console.log({ btnBuscador });
+  console.log({ elInputBuscador });
 
-   
-function botonFavoritos(datos){
-	console.log("entro en boton");
-}
+  btnBuscador.addEventListener("click", function () {
+    let personaje = busquedaPersonaje(elInputBuscador.value);
+    if (personaje !== null) imprimirObjeto(personaje);
+  });
+};

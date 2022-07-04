@@ -108,7 +108,6 @@
     width: 33%;  }
 
   .header_container_menu_list{
-
     webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -121,9 +120,9 @@
     -ms-flex-align: center;
     align-items: center;
     justify-content: right;
-       
-    
+     
   }
+
   .header_icono{
     max-width: 100px;
     max-height: 100px;
@@ -253,7 +252,7 @@
   text-align: center;
 }
 
-.comic{
+.comic {
   max-width:100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -343,6 +342,63 @@ text-align: center;
 .imagen_episodio{
   max-width: 184px ;
   max-height: 274px;
+}
+
+/*busqueda*/
+.personajes_title2{
+  size:24px;
+
+}
+.personajes_title{
+  size:30px;
+}
+.personajes_img{
+  max-width: 261px;
+  max-height: 193px;
+}
+.busqueda{
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+input[type=text]:not([size]){
+  width: 800px ;
+  height:30px ;
+  margin-right: 20px;
+  background-color: transparent;
+  border:1px solid #FFE81F;
+  color:white
+}
+.resultado-busqueda{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/*acercademi*/
+.acercademi{
+  display: flex;
+  -ms-grid-columns: 1fr 80px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+  margin-right: 100px;
+}
+.mi_imagen{
+  max-width: 450px;
+  max-height: 450px;
+  
+
+}
+
+.sobre_mi{
+  margin-right: 100px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  
+  
+}
+.sobre_mi2{
+  margin-bottom: 50px;
+  
 }
 
 
