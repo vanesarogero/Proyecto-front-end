@@ -13,12 +13,11 @@ function imprimirObjeto(personaje) {
       <p>Color pelo: ${personaje.hair_color} </p>
       <p>Fecha nacimiento: ${personaje.birth_year} </p>
       <p>Género: ${personaje.gender}</p>
-      <a id="favoritos">Me gusta</a>`;
+      <a id="favoritos class="impresionboton">Me gusta</a>`;
 
   elResultadoBusqueda.innerHTML = impresion;
 }
 
-// <button id="gusta" class="impresion_boton" onclick="botonFavoritos()"></button>`;
 
 function busquedaPersonaje(nombrePersonaje) {
   let personaje = null;
@@ -99,3 +98,6 @@ const main = function () {
     if (personaje !== null) imprimirObjeto(personaje);
   });
 };
+
+// <button id="gusta" class="impresion_boton" onclick="botonFavoritos()"></button>`;
+
