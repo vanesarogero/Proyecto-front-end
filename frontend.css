@@ -152,6 +152,7 @@
     color:white;
     margin-right:30px;
   }
+
   
   .container2_parrafo1 {
     text-align: center;
@@ -162,17 +163,19 @@
     text-align: center;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 50px;
 
   }
   .george .disney .grid .grid--2-cols{
     margin-top: 20px;
     margin-left: 250px;
     margin-bottom: 50px;
+    display: grid;
 
   }
 .george_img{
-  max-height: 60%;
-  max-width: 50%;
+  max-height: 80%;
+  max-width: 70%;
   margin-top: 30px;
   margin-bottom: 30px;
   display: block;
@@ -189,6 +192,8 @@
   text-align: center;
   justify-content: center;
   margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .george_columna2{
   margin-right: 250px;
@@ -196,11 +201,14 @@
 }
 .george_title{
   size: 20px;
+  margin-bottom: 20px;
+  margin-top: -10px;
 }
 
 .george_parrafo{
   text-align: center;
   size: 12px;
+  margin-top: 0px;
   
 }
 /*disney*/
@@ -221,7 +229,6 @@
   margin-right: 120px;
   text-align: center;
   justify-content: center;
-  margin: auto;
   display: flex;
 }
 .disney_columna2{
@@ -229,10 +236,11 @@
   align-content: center;
 }
 .disney_title{
-  margin-top:-20px;
+  margin-top:50px;
   margin-bottom: 10px;
   size: 20px;
   display:flex
+  text-align:center;
 }
 
 .disney_parrafo{
@@ -241,7 +249,8 @@
   
 }
 .comic2_title{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 .comic2_parrafo{
   margin-top: 50px;

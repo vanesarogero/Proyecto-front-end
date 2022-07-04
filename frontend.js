@@ -1,7 +1,7 @@
 let personajes = [];
 
 function imprimirObjeto(personaje) {
-  const elResultadoBusqueda = document.querySelector("#resultado-busqueda");
+  let elResultadoBusqueda = document.getElementById("resultado-busqueda");
   let impresion = "";
 
   impresion += `<h6 class="impresion_title">Descripcion de: ${personaje.name}"</h6>" 
@@ -12,7 +12,8 @@ function imprimirObjeto(personaje) {
       <p>Color piel: ${personaje.skin_color} </p>
       <p>Color pelo: ${personaje.hair_color} </p>
       <p>Fecha nacimiento: ${personaje.birth_year} </p>
-      <p>Género: ${personaje.gender}</p>`;
+      <p>Género: ${personaje.gender}</p>
+      <a id="favoritos">Me gusta</a>`;
 
   elResultadoBusqueda.innerHTML = impresion;
 }
@@ -87,8 +88,8 @@ const pideDatos = (numPage) => {
 })();
 
 const main = function () {
-  let btnBuscador = document.querySelector("#busqueda-boton");
-  let elInputBuscador = document.querySelector("#input-busqueda");
+  let btnBuscador = document.getElementById("busqueda-boton");
+  let elInputBuscador = document.getElementById("input-busqueda");
 
   console.log({ btnBuscador });
   console.log({ elInputBuscador });
