@@ -1,8 +1,10 @@
-let personajes = [];
+let personajes = []; //guardo en un array el objeto ue me da la json
 
 function imprimirObjeto(personaje) {
   let elResultadoBusqueda = document.getElementById("resultado-busqueda");
   let impresion = "";
+
+  //imprimir por el dom toda la info
 
   impresion += `<h6 class="impresion_title">Descripcion de: ${personaje.name}"</h6>" 
       <p>Nombre: ${personaje.name} </p>
@@ -18,7 +20,7 @@ function imprimirObjeto(personaje) {
   elResultadoBusqueda.innerHTML = impresion;
 }
 
-
+//busqueda en el array del personaje 
 function busquedaPersonaje(nombrePersonaje) {
   let personaje = null;
 
@@ -55,7 +57,7 @@ const mapData = function (groupsPersonajes) {
   }
   return resultD;
 };
-
+//peticion de a api una y otra vez hasta que ya no haya ninguna página más. (la api solo devuelve la primera poágina)
 const pideDatos = (numPage) => {
   const host = `https://swapi.dev/api/people/?page=${numPage}`;
   return new Promise((resolve, reject) => {
@@ -81,6 +83,7 @@ const pideDatos = (numPage) => {
     }
     personajes = mapData(dataTmp);
     main();
+    // en caso de error 
 } catch (e) {
     console.log(e);
 }

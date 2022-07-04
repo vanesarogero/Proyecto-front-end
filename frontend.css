@@ -47,6 +47,7 @@
     background-color: #FFE81F;
     border-radius: 6px;
     border: 1px solid #ffffff;
+    cursor: pointer
     
     }
 
@@ -173,6 +174,10 @@
     display: grid;
 
   }
+  .george_columna1{
+    max-height:80% ;
+    margin-bottom: 50px;
+  }
 .george_img{
   max-height: 80%;
   max-width: 70%;
@@ -193,11 +198,12 @@
   justify-content: center;
   margin: auto;
   text-align: center;
-  margin-bottom: 50px;
+  
 }
 .george_columna2{
   margin-right: 250px;
   align-content: center;
+  margin-bottom: 50px;
 }
 .george_title{
   size: 20px;
